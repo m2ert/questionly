@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Noticia+Text:wght@700&family=Roboto:wght@300;400;500&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/* global styles */
+:root {
+	--red: #b92b27;
+	--dark-grey: #636466;
+	--main-black: #282829;
+	--border-gray: #c5c6c8;
+	--blue: #1a5aff;
+	--shallow-blue: #95b3ff;
+}
+
+.text-danger{
+	color: #D33;
+}
+.text-success{
+	color: #00B74A;
+}
+.btn-active{
+	background-color: #2e6aff !important;
+}
+
+body {
+	font-family: 'Roboto', sans-serif;
+	width: 100vw;
+	height: 100vh;
+	background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+		url('../images/login-bg.jpg') center/cover no-repeat;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.form {
+	width: 700px;
+	max-width: 90%;
+	background: #fff;
+	height: 85%;
+	height: auto;
+	border-radius: 3px;
+	border: 1px solid rgb(224, 224, 225);
+	/* text-align: center; */
+	padding-top: 1rem;
+	padding-bottom: 4rem;
+	padding-left: 0.5rem;
+	padding-right: 0.5rem;
+	display: flex;
+	flex-direction: column;
+	box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.05);
+}
+.form-title h1 {
+	font-family: 'Noticia Text', serif;
+	font-size: 2.5rem;
+	/* letter-spacing: 1px; */
+	color: var(--red);
+	margin-bottom: 3px;
+	text-align: center;
+	margin-bottom: 10px;
+}
+.form-title p {
+	color: var(--dark-grey);
+	font-weight: 500;
+	font-size: 13px;
+	text-align: center;
+}
+.form-title {
+	margin-bottom: 20px;
+}
+.form-group {
+	display: flex;
+	flex-direction: column;
+	padding: 1rem;
+	gap: 2rem;
+	/* max-width: 600px; */
+	/* justify-content: space-between; */
+	/* margin: auto;s */
+}
+
+.form-control {
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 10px;
+	/* margin: 0 auto; */
+}
+.title {
+	border-bottom: 1px solid var(--border-gray);
+	margin-bottom: 20px;
+	padding-bottom: 0.2rem;
+}
+.form label {
+	margin-bottom: 5px;
+	font-size: 13px;
+	font-weight: 500;
+}
+.form input {
+	margin-bottom: 5px;
+	padding: 0.5rem;
+	border: 1px solid var(--border-gray);
+	border-radius: 2px;
+	transition: 0.3s all ease-in;
+}
+.form input:focus {
+	outline: none;
+}
+.form input:hover {
+	border: 1px solid var(--blue);
+}
+.btn {
+	padding: 0.5rem;
+	border-radius: 2px;
+	border: 1px solid var(--border-gray);
+	background: var(--shallow-blue);
+	cursor: pointer;
+	color: #fff;
+	margin-top: 10px;
+}
+.form small {
+	font-size: 12px;
+	text-align: center;
+	margin-top: 10px;
+	color: var(--border-gray);
+	cursor: pointer;
+}
+.form small:hover {
+	text-decoration: underline;
+}
+@media screen and (max-width: 780px) {
+	.form {
+		max-width: 550px;
+		width: 90%;
+	}
+}
+@media screen and (min-width: 780px) {
+	.form-group {
+		flex-direction: row;
+		justify-content: space-evenly;
+	}
+	.signup-section {
+		display: flex;
+		flex-direction: column;
+
+		gap: 20px;
+
+		width: 100%;
+	}
+	.login-section {
+		display: flex;
+		flex-direction: column;
+		/* justify-content: space-evenly; */
+		/* width: 100%;
+        flex: 1; */
+		gap: 20px;
+		width: 100%;
+	}
+	.form {
+		gap: 2rem;
+	}
+	.form-title p {
+		margin-top: 20px;
+		font-size: 16px;
+	}
+	.form-title h1 {
+		font-size: 3.5rem;
+	}
+	.form-title {
+		margin-bottom: 30px;
+	}
+}
